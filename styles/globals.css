@@ -1,0 +1,45 @@
+/* CSS Global Settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --toned-dark-color: #302C21;
+  --secondary-gray-color: #72706A;
+}
+
+html
+{
+  height: 100%;
+  width: 100%;
+}
+
+body
+{
+  background-color: beige;
+  height: 100%;
+  width: 100%;
+}
+
+.no-transition * { transition: none !important; }
+
+body::-webkit-scrollbar
+{
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track
+{
+  background: beige;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background: var(--toned-dark-color);
+}

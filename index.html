@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Keyboards World</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <a href="/"><h1>Keyboards World</h1></a>
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/"><li>About</li></a>
+        <a href="/"><li>Store</li></a>
+      </ul>
+      <div id="cart">
+        <a href="/"><img src="/graphics/shopping-bag.svg"/></a>
+      </div>
+    </nav>
+    <header>
+      <div id="background"></div>
+      <h2>Choose your keyboard now!</h2>
+    </header>
+    <article>
+      <div><img src="./graphics/laptop-icon.svg"/><h2>You choose,</h2></div>
+      <div><img src="./graphics/build-icon.svg"/><h2>We build,</h2></div>
+      <div><img src="./graphics/delivery-icon.svg"/><h2>Then ship!</h2></div>
+    </article>
+    <footer>
+      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a> <br /> All rights reserved</h3>
+    </footer>
+
+    <script type = "text/javascript">
+      // No animations on load
+      document.body.classList.add("no-transition");
+      document.body.classList.remove("no-transition");
+      setTimeout(() => document.body.classList.remove("no-transition"), 1);
+    </script>
+  </body>
+</html>

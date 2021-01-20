@@ -1,0 +1,18 @@
+/* Footer Styling */
+
+footer
+{
+  position: relative;
+  background-color: rgb(207, 207, 179);
+  font: 20px "Open Sans";
+  color: var(--secondary-gray-color);
+  height: 130px;
+  text-align: center;
+  padding-top: 32px;
+}
+
+footer a
+{
+  color: var(--toned-dark-color);
+  text-decoration: none;
+}

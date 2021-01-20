@@ -1,0 +1,61 @@
+/* Navbar Styling */
+
+nav
+{
+  display: grid;
+  grid-template-columns: 10fr 85fr 5fr;
+  background-color: beige;
+  width: 100%;
+  box-shadow: 0 5px 20px gray;
+  z-index: 1;
+}
+
+nav h1
+{
+  font: 38px "Eczar", serif;
+  color: var(--toned-dark-color);
+  padding: 11px 20px 7px 25px;
+  width: 350px;
+  user-select: none;
+}
+
+nav a { text-decoration: none; }
+
+nav ul
+{
+  display: inline-flex;
+  vertical-align: middle;
+  list-style: none;
+  margin-top: 19px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  height: 45px;
+}
+
+nav ul li
+{
+  padding: 10px;
+  text-decoration: none;
+  color: var(--secondary-gray-color);
+  transition: .15s all;
+  backface-visibility: hidden;
+}
+
+nav ul li:hover
+{
+  transform: scale(1.2) translateZ(0);
+  color: black;
+}
+
+nav #cart
+{
+  text-align: center;
+  width: 90px;
+}
+
+nav #cart img
+{
+  margin-top: 16px;
+  height: 50px;
+  padding: 5px;
+}
