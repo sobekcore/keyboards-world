@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Keyboards World</title>
+    <link href="about.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav>
+      <h1>Keyboards World</h1>
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/about"><li>About</li></a>
+        <a href="/store"><li>Store</li></a>
+      </ul>
+      <div id="cart">
+        <a href="/"><img src="/graphics/shopping-bag.svg"/></a>
+      </div>
+    </nav>
+    <header>
+      <div id="background"></div>
+      <div id="wrapper">
+        <h1>How we build your <br /> <span>Keyboards</span></h1>
+        <ul id="container">
+          <li><a href="#pcb"><img src="../graphics/pcb.png"/><h2>PCB</h2></a></li>
+          <li><a href="#case"><img src="../graphics/case.png"/><h2>Case</h2></a></li>
+          <li><a href="#switches"><img src="../graphics/switch.png"/><h2>Switches</h2></a></li>
+          <li><a href="#keycaps"><img src="../graphics/keycap.png"/><h2>Keycaps</h2></a></li>
+        </ul>
+      </div>
+    </header>
+    <article>
+      <section id="pcb">
+        <h2>PCB</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in risus pharetra, lobortis justo vitae,
+        euismod neque. Vivamus egestas quam sed purus ornare varius. Duis sagittis nisl id ex aliquam pulvinar. Sed
+        viverra leo sit amet dapibus pretium. Donec bibendum ornare mauris. Aliquam id tortor ipsum. Praesent convallis
+        nibh ac ultricies elementum. Morbi ornare leo sed eleifend aliquet. Nunc aliquam ligula eget orci ultrices
+        ullamcorper. Nulla faucibus rutrum metus, sed blandit leo lacinia et. Nullam sodales sodales vehicula. Proin
+        in ipsum lorem. Vestibulum vel laoreet ipsum, quis porta elit.</p>
+      </section>
+      <section id="case">
+        <h2>Case</h2>
+        <p>Vestibulum ex urna, aliquet nec placerat non, ornare eu nunc. Donec mattis nisi quis lorem pulvinar auctor.
+        Sed laoreet venenatis leo vel consectetur. Pellentesque magna neque, suscipit non mollis sed, tempor vel tortor.
+        Pellentesque luctus ullamcorper quam, ac laoreet ante vestibulum id. Etiam convallis mollis ligula, a pretium
+        enim luctus nec. Nunc feugiat sagittis purus, quis congue felis gravida non. Mauris dapibus consequat neque,
+        nec fermentum lectus iaculis sed. Sed blandit dui id eros accumsan fermentum.</p>
+      </section>
+      <section id="switches">
+        <h2>Switches</h2>
+        <p>Suspendisse ut tristique nunc. In id dapibus dui. Nam nec suscipit ipsum. Duis vitae sodales lacus. Vestibulum
+        varius libero id neque faucibus venenatis eget at purus. Nulla at posuere mauris, a interdum neque. Cras
+        fermentum mauris pellentesque mi posuere, quis mattis sapien lobortis. Quisque aliquet nulla vel ante euismod,
+        sit amet dictum lorem fermentum. Nunc efficitur efficitur ultricies. Mauris turpis risus, volutpat eu viverra
+        ac, congue ac tellus. Ut venenatis augue in urna consequat, eu fermentum dolor faucibus.</p>
+      </section>
+      <section id="keycaps">
+        <h2>Keycaps</h2>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras mattis, lectus
+        ut tincidunt fringilla, arcu felis interdum lectus, ac tincidunt leo erat quis augue. Nunc id luctus arcu, et
+        suscipit magna. Suspendisse dictum cursus nunc. Donec malesuada nisl turpis, id sollicitudin erat finibus quis.
+        Proin quam quam, mattis a metus sed, imperdiet iaculis est. Nullam vel quam nisi. Nam tempus sapien arcu, et
+        euismod massa porttitor eu. Nam laoreet nibh sit amet quam tempor, at facilisis leo ornare. Suspendisse quis
+        rhoncus tortor.</p>
+      </section>
+    </article>
+    <footer>
+      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a> <br /> All rights reserved</h3>
+    </footer>
+
+    <script type = "text/javascript">
+      // No animations on load
+      document.body.classList.add("no-transition");
+      document.body.classList.remove("no-transition");
+      setTimeout(() => document.body.classList.remove("no-transition"), 1);
+
+      // Smooth scrolling
+      const links = document.querySelectorAll("#container li a");
+
+      for(const link of links)
+      {
+        link.addEventListener("click", clickHandler);
+      }
+
+      function clickHandler(e)
+      {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+
+        scroll(
+          {
+            top: offsetTop,
+            behavior: "smooth"
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

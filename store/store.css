@@ -1,0 +1,6 @@
+/* Import duplicate styles */
+@import "../styles/globals.css";
+@import "../styles/navbar.css";
+@import "../styles/footer.css";
+
+section { text-align: center; margin-top: 40px; }

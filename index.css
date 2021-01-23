@@ -5,18 +5,14 @@
 
 
 /* Header */
-header
-{
-  height: calc(100% - 85px);
-}
+header { height: calc(100% - 85px); }
 
 header #background
 {
   position: absolute;
   height: calc(100% - 85px);
   width: 100%;
-  background-image: url("./graphics/mechanical-keyboards.jpg");
-  background-size: cover;
+  background: url("./graphics/mechanical-keyboards.jpg") no-repeat fixed center / cover;
   opacity: 0.2;
 }
 
@@ -25,15 +21,13 @@ header h2
   position: absolute;
   font: bold 36px "Montserrat", sans-serif;
   color: beige;
+  width: 542px;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--toned-dark-color);
-  width: 542px;
-  top: calc(50% - 50px);
+  top: calc(50% - 25px); left: 50%;
   transform: translate(-50%, 0%);
-  left: 50%;
   transition: .4s all;
-  cursor: pointer;
   user-select: none;
 }
 
@@ -44,34 +38,40 @@ header h2:before
   background:
     linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00,
     #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  top: -2px;
-  left: -2px;
+  top: -2px; left: -2px;
   background-size: 400%;
   z-index: -1;
   opacity: 0;
   filter: blur(8px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing 30s linear infinite;
+  animation: rgb 30s linear infinite;
   transition: opacity .4s ease-in-out;
 }
 
 header h2:hover:before { opacity: 1; }
 header h2:hover { color: var(--toned-dark-color); }
 
-@keyframes glowing
+@keyframes rgb
 {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
 
+@media (max-width: 549px)
+{ header h2 { width: 345px; font-size: 22px; } }
+
+@media (max-width: 379px)
+{ header h2 { width: 265px; font-size: 16px; } }
+
 
 /* Information */
 article
 {
   display: inline-flex;
-  font: bold 24px "Montserrat", sans-serif;
+  flex-wrap: wrap;
+  font: bold 36px "Montserrat", sans-serif;
   color: var(--toned-dark-color);
   box-shadow: 0 -5px 20px gray;
   background-color: beige;
@@ -80,13 +80,17 @@ article
 }
 
 article div
-{
-  margin: auto;
-  text-align: center;
-}
+{ text-align: center; margin: auto; }
 
 article div img
+{ height: 200px; margin-bottom: 10px; }
+
+@media(max-width: 999px)
 {
-  height: 120px;
-  margin-bottom: 10px;
+  article { font-size: 25px; min-height: 640px; }
+  article div img { height: 135px; margin-bottom: 0; }
 }
+
+
+/* Footer */
+footer { background-color: var(--dark-beige-color); }

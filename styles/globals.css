@@ -7,22 +7,22 @@
 *
 {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
 
   --toned-dark-color: #302C21;
   --secondary-gray-color: #72706A;
+  --dark-beige-color: #CFCFB3;
 }
 
 html
-{
-  height: 100%;
-  width: 100%;
-}
+{ height: 100%; width: 100%; }
 
 body
 {
   background-color: beige;
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
 }
@@ -30,16 +30,10 @@ body
 .no-transition * { transition: none !important; }
 
 body::-webkit-scrollbar
-{
-  width: 14px;
-}
+{ width: 14px; }
 
 body::-webkit-scrollbar-track
-{
-  background: beige;
-}
+{ background: beige; }
 
 body::-webkit-scrollbar-thumb
-{
-  background: var(--toned-dark-color);
-}
+{ background: var(--toned-dark-color); }
