@@ -25,7 +25,7 @@ header h2
   padding: 20px;
   border-radius: 10px;
   background-color: var(--toned-dark-color);
-  top: calc(50% - 25px); left: 50%;
+  top: calc(50% - 35px); left: 50%;
   transform: translate(-50%, 0%);
   transition: .4s all;
   user-select: none;
@@ -66,31 +66,55 @@ header h2:hover { color: var(--toned-dark-color); }
 { header h2 { width: 265px; font-size: 16px; } }
 
 
-/* Information */
-article
+/* Features */
+#features
 {
+  position: relative;
   display: inline-flex;
   flex-wrap: wrap;
   font: bold 36px "Montserrat", sans-serif;
   color: var(--toned-dark-color);
   box-shadow: 0 -5px 20px gray;
   background-color: beige;
-  height: calc(100% - 128px);
-  width: 100%;
+  height: 70%; width: 100%;
 }
 
-article div
-{ text-align: center; margin: auto; }
+#features div
+{
+  text-align: center;
+  margin: auto; padding: 0 30px;
+}
 
-article div img
+#features div img
 { height: 200px; margin-bottom: 10px; }
 
 @media(max-width: 999px)
 {
-  article { font-size: 25px; min-height: 640px; }
-  article div img { height: 135px; margin-bottom: 0; }
+  #features { font-size: 25px; min-height: 640px; }
+  #features div img { height: 135px; margin-bottom: 0; }
 }
 
 
-/* Footer */
-footer { background-color: var(--dark-beige-color); }
+/* About */
+#about
+{
+  position: relative;
+  font: bold 26px "Montserrat", sans-serif;
+  text-align: center; line-height: 1.5;
+  color: var(--toned-dark-color);
+  background-color: var(--dark-beige-color);
+  padding: 160px 120px;
+  min-height: 500px;
+}
+
+#about h1
+{
+  font-size: 48px;
+  margin-bottom: 45px;
+}
+
+@media(max-width: 829px)
+{ #about { padding: 80px 60px; } }
+
+@media(max-width: 449px)
+{ #about { padding: 50px 40px; } }

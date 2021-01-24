@@ -117,19 +117,31 @@ article
   box-shadow: 0 -5px 20px gray;
 }
 
-article section
+section
 {
   padding: 60px 60px 70px 60px;
   width: 100%;
   text-align: center;
 }
 
-article section h2
+section h2
 {
+  font-size: 48px;
   padding-bottom: 45px;
+  letter-spacing: 3px;
 }
 
+section img { margin-top: 55px; max-width: 100%; }
+#keycaps img { border-radius: 50px; }
+#pcb img { border-radius: 20px; }
+
 #case, #keycaps
+{ background-color: var(--dark-beige-color); }
+
+@media(max-width: 460px)
 {
-  background-color: var(--dark-beige-color);
+  section
+  {
+    padding: 30px 30px 40px 30px;
+  }
 }

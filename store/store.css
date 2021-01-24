@@ -3,4 +3,9 @@
 @import "../styles/navbar.css";
 @import "../styles/footer.css";
 
-section { text-align: center; margin-top: 40px; }
+section
+{
+  font-size: 80px;
+  text-align: center;
+  margin-top: 40px;
+}
