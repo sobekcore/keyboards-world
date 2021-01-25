@@ -4,47 +4,39 @@
   <head>
     <title>Keyboards World</title>
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./graphics/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <nav>
-      <h1>Keyboards World</h1>
-      <ul>
-        <a href="/"><li>Home</li></a>
-        <a href="/about"><li>About</li></a>
-        <a href="/store"><li>Store</li></a>
-      </ul>
-      <div id="cart">
-        <a href="/"><img src="/graphics/shopping-bag.svg"/></a>
-      </div>
-    </nav>
+    <!-- Importing Navbar HTML file -->
+    <html-include src="./html/navbar.html"></html-include>
+
     <header>
       <div id="background"></div>
       <a href="/store"><h2>Choose your keyboard now!</h2></a>
     </header>
     <article id="features">
-      <div><img src="./graphics/laptop-icon.svg"/><h2>You choose,</h2></div>
-      <div><img src="./graphics/build-icon.svg"/><h2>We build,</h2></div>
-      <div><img src="./graphics/delivery-icon.svg"/><h2>Then ship!</h2></div>
+      <div><img src="./graphics/svg/laptop-icon.svg"/><h2>You choose</h2></div>
+      <div><img src="./graphics/svg/build-icon.svg"/><h2>We build</h2></div>
+      <div><img src="./graphics/svg/delivery-icon.svg"/><h2>Then ship!</h2></div>
     </article>
     <article id="about">
       <h1>About Us</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in risus pharetra, lobortis justo vitae,
-        euismod neque. Vivamus egestas quam sed purus ornare varius. Duis sagittis nisl id ex aliquam pulvinar. Sed
-        viverra leo sit amet dapibus pretium. Donec bibendum ornare mauris. Aliquam id tortor ipsum. Praesent convallis
-        nibh ac ultricies elementum. Morbi ornare leo sed eleifend aliquet. Nunc aliquam ligula eget orci ultrices
-        ullamcorper. Nulla faucibus rutrum metus, sed blandit leo lacinia et. Nullam sodales sodales vehicula. Proin
-        in ipsum lorem. Vestibulum vel laoreet ipsum, quis porta elit.</p>
+      euismod neque. Vivamus egestas quam sed purus ornare varius. Duis sagittis nisl id ex aliquam pulvinar. Sed
+      viverra leo sit amet dapibus pretium. Donec bibendum ornare mauris. Aliquam id tortor ipsum. Praesent convallis
+      nibh ac ultricies elementum. Morbi ornare leo sed eleifend aliquet. Nunc aliquam ligula eget orci ultrices
+      ullamcorper. Nulla faucibus rutrum metus, sed blandit leo lacinia et. Nullam sodales sodales vehicula. Proin
+      in ipsum lorem. Vestibulum vel laoreet ipsum, quis porta elit.</p>
     </article>
-    <footer>
-      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a> <br /> All rights reserved</h3>
-    </footer>
+    <button onclick="backToTop()" id="top"><img src="./graphics/svg/to-top.svg"/></button>
+    <div class="loader"><img src="./graphics/svg/loading.svg" alt="Loading..." /></div>
 
-    <script type = "text/javascript">
-      // No animations on load
-      document.body.classList.add("no-transition");
-      document.body.classList.remove("no-transition");
-      setTimeout(() => document.body.classList.remove("no-transition"), 1);
-    </script>
+    <!-- Importing Footer HTML file -->
+    <html-include src="./html/footer.html"></html-include>
+
+    <script src="./javascript/loading.js"></script>
+    <script src="./javascript/import-html.js"></script>
+    <script src="./javascript/to-top.js"></script>
   </body>
 </html>

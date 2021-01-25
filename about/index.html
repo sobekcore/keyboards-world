@@ -2,22 +2,15 @@
 
 <html>
   <head>
-    <title>Keyboards World</title>
+    <title>Keyboards World - About</title>
     <link href="about.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../graphics/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <nav>
-      <h1>Keyboards World</h1>
-      <ul>
-        <a href="/"><li>Home</li></a>
-        <a href="/about"><li>About</li></a>
-        <a href="/store"><li>Store</li></a>
-      </ul>
-      <div id="cart">
-        <a href="/"><img src="/graphics/shopping-bag.svg"/></a>
-      </div>
-    </nav>
+    <!-- Importing Navbar HTML file -->
+    <html-include src="../html/navbar.html"></html-include>
+
     <header>
       <div id="background"></div>
       <div id="wrapper">
@@ -70,35 +63,14 @@
         <img src="../graphics/keycap-profiles.png"/>
       </section>
     </article>
-    <footer>
-      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a> <br /> All rights reserved</h3>
-    </footer>
+    <button onclick="backToTop()" id="top"><img src="../graphics/svg/to-top.svg"/></button>
+    <div class="loader"><img src="../graphics/svg/loading.svg" alt="Loading..." /></div>
 
-    <script type = "text/javascript">
-      // No animations on load
-      document.body.classList.add("no-transition");
-      document.body.classList.remove("no-transition");
-      setTimeout(() => document.body.classList.remove("no-transition"), 1);
+    <!-- Importing Footer HTML file -->
+    <html-include src="../html/footer.html"></html-include>
 
-      // Smooth scrolling
-      const links = document.querySelectorAll("#container li a");
-
-      for(const link of links)
-      { link.addEventListener("click", clickHandler); }
-
-      function clickHandler(e)
-      {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
-
-        scroll(
-          {
-            top: offsetTop,
-            behavior: "smooth"
-          }
-        );
-      }
-    </script>
+    <script src="../javascript/loading.js"></script>
+    <script src="../javascript/import-html.js"></script>
+    <script src="../javascript/to-top.js"></script>
   </body>
 </html>

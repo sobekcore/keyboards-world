@@ -1,0 +1,26 @@
+/* Back-to-top Button Styling */
+
+#top
+{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 15px; right: 18px;
+  width: 60px; height: 60px;
+  border: none; outline: none;
+  background-color: var(--toned-dark-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+#top img { width: 40px; height: 40px;}
+
+@media(min-width: 800px)
+{
+  #top:hover
+  {
+    filter: brightness(1.5) contrast(0.9);
+    transform: scale(1.1);
+  }
+}

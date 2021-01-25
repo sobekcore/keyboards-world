@@ -1,8 +1,9 @@
 /* Import duplicate styles */
 @import "./styles/globals.css";
+@import "./styles/loading.css";
 @import "./styles/navbar.css";
 @import "./styles/footer.css";
-
+@import "./styles/top-button.css";
 
 /* Header */
 header { height: calc(100% - 85px); }
@@ -19,13 +20,13 @@ header #background
 header h2
 {
   position: absolute;
-  font: bold 36px "Montserrat", sans-serif;
+  font: bold 36px "Montserrat";
   color: beige;
   width: 542px;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--toned-dark-color);
-  top: calc(50% - 35px); left: 50%;
+  top: calc(50% - 45px); left: 50%;
   transform: translate(-50%, 0%);
   transition: .4s all;
   user-select: none;
@@ -60,7 +61,7 @@ header h2:hover { color: var(--toned-dark-color); }
 }
 
 @media (max-width: 549px)
-{ header h2 { width: 345px; font-size: 22px; } }
+{ header h2 { top: calc(50% - 15px); width: 345px; font-size: 22px; } }
 
 @media (max-width: 379px)
 { header h2 { width: 265px; font-size: 16px; } }
@@ -72,11 +73,12 @@ header h2:hover { color: var(--toned-dark-color); }
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
-  font: bold 36px "Montserrat", sans-serif;
+  font: bold 36px "Montserrat";
   color: var(--toned-dark-color);
   box-shadow: 0 -5px 20px gray;
   background-color: beige;
   height: 70%; width: 100%;
+  padding: 15px 0;
 }
 
 #features div
@@ -99,7 +101,7 @@ header h2:hover { color: var(--toned-dark-color); }
 #about
 {
   position: relative;
-  font: bold 26px "Montserrat", sans-serif;
+  font: bold 26px "Montserrat";
   text-align: center; line-height: 1.5;
   color: var(--toned-dark-color);
   background-color: var(--dark-beige-color);

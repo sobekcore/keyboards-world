@@ -26,7 +26,7 @@ nav ul
   display: inline-flex;
   vertical-align: middle;
   list-style: none;
-  margin-top: 19px;
+  margin-top: 18px;
   font-size: 20px;
   font-family: "Open Sans";
   height: 45px;
@@ -37,7 +37,7 @@ nav ul li
   padding: 10px;
   text-decoration: none;
   color: var(--secondary-gray-color);
-  transition: .15s all;
+  transition: .15s ease-in-out;
   backface-visibility: hidden;
 }
 
@@ -58,7 +58,10 @@ nav ul li:hover
   margin-top: 16px;
   height: 50px;
   padding: 5px;
+  transition: .15s ease-in-out;
 }
+
+#cart img:hover { transform: scale(1.2); }
 
 @media(max-width: 669px)
 {
