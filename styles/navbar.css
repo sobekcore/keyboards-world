@@ -47,25 +47,40 @@ nav ul li:hover
   color: black;
 }
 
-#cart
+#navbar-cart
 {
   text-align: center;
   width: 90px;
 }
 
-#cart img
+#navbar-cart img
 {
-  margin-top: 16px;
-  height: 50px;
-  padding: 5px;
+  height: 55px;
+  padding: 5px; margin-top: 14px;
   transition: .15s ease-in-out;
 }
 
-#cart img:hover { transform: scale(1.2); }
+#cart-items
+{
+  font: 16px "Open Sans";
+  background-color: var(--dark-beige-color);
+  padding: 3px 6px; border-radius: 4px;
+  margin-left: 38px; margin-top: 16px;
+  position: absolute;
+}
+
+#cart-button
+{
+  width: 50px;
+  transition: .15s ease-in-out;
+  cursor: pointer;
+}
+
+#cart-button:hover { transform: scale(1.2); }
 
 @media(max-width: 669px)
 {
   nav h1 { display: none; }
   nav ul { display: none; }
-  #cart img { margin-bottom: 15px; }
+  #navbar-cart img { margin-bottom: 11px; }
 }

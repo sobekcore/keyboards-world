@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Gateron Yellow",
+        "price": 11.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/gateron-yellow.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Kalih Box Jade",
+        "price": 14.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/kalih-box-jade.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Sunset Keycaps",
+        "price": 19.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/sunset-keycaps.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Cherry MX Black",
+        "price": 23.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/cherry-mx-black.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Cherry MX Red",
+        "price": 23.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/cherry-mx-red.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Tofu Case 60%",
+        "price": 49.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/tofu-case-60.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Zealios V2 65g",
+        "price": 59.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/zealios-v2-65g.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Brass Plate 60%",
+        "price": 34.99,
+        "image": { "fields": { "file": { "url": "../graphics/products/brass-plate-60.jpg" } } }
+      }
+    }
+  ]
+}

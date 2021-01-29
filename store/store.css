@@ -5,15 +5,111 @@
 @import "../styles/footer.css";
 @import "../styles/top-button.css";
 
-/* Temporary styling */
-section
+/* Products styling */
+#products
 {
-  position: absolute;
+  padding: 4rem 0;
+  margin-bottom: 2.6rem;
   color: var(--toned-dark-color);
-  text-align: center;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-section h1 { font: bold 106px "Montserrat"; }
-section p { font: bold 32px "Montserrat"; }
+#section-title h2
+{
+  font: 4rem "Eczar", serif;
+  text-align: center;
+  margin-bottom: 3.4rem;
+}
+
+#products-center
+{
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+#img-container
+{ position: relative; overflow: hidden; }
+
+#bag-btn
+{
+  position: absolute;
+  font: bold 24px "Open Sans";
+  color: var(--toned-dark-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  outline: none; border: none;
+  padding: 0.5rem 0.75rem;
+  top: 0; right: 0; opacity: 0;
+  width: 100%; height: 100%;
+  background: none;
+  transition: all .8s, opacity .3s ease-in-out;
+  cursor: pointer;
+}
+
+#bag-btn[disabled]
+{
+  font-size: 36px;
+  text-shadow: 0px 0px 4px black;
+  transform: rotateX(360deg);
+  opacity: 0.7;
+}
+
+#fa-shopping-cart { margin-right: 0.5rem; }
+
+#product:hover #bag-btn { opacity: 1; }
+
+#product
+{
+  position: relative;
+  display: block;
+  font-family: "Open Sans";
+  padding: 30px;
+  background-color: var(--dark-beige-color);
+  border-radius: 15px;
+  width: 100%;
+  transition: .35s ease-in-out;
+}
+
+#product-img
+{
+  display: block;
+  border-radius: 15px;
+  border: 2px var(--toned-dark-color) solid;
+  width: 100%; min-height: 12rem;
+  transition: .3s ease-in-out;
+}
+
+#product:hover
+{
+  background-color: rgba(207, 207, 179, 0.3);
+  transform: scale(1.06); cursor: pointer;
+}
+
+#product:hover #product-img { opacity: 0.2; }
+
+#product h3
+{
+  font-size: 26px;
+  margin-top: 1.1rem;
+  text-align: center;
+}
+
+#product h4
+{
+  font-size: 21px;
+  margin-top: 0.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+/* Footer */
+footer
+{
+  background-color: var(--dark-beige-color);
+  box-shadow: 0 -5px 20px gray;
+}
