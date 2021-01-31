@@ -11,8 +11,23 @@
     <div class="loader"><img src="../graphics/svg/loading.svg" alt="Loading..." /></div>
     <button onclick="backToTop()" id="top"><img src="../graphics/svg/to-top.svg"/></button>
 
-    <!-- Importing Navbar HTML file -->
-    <html-include src="../html/navbar.html"></html-include>
+    <div id="background"></div>
+
+    <!-- Hardcoded Navbar due to store variables -->
+    <nav>
+      <h1>Keyboards World</h1>
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/about"><li>About</li></a>
+        <a href="/store"><li>Store</li></a>
+      </ul>
+      <div id="navbar-cart">
+        <div id="cart-button">
+          <div id="cart-items">0</div>
+          <img src="/graphics/svg/shopping-bag.svg"/>
+        </div>
+      </div>
+    </nav>
 
     <!-- Products -->
     <section id="products">
@@ -23,7 +38,21 @@
       </div>
     </section>
 
-    <!-- Cart here -->
+    <!-- Cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span id="cart-close">
+          <img src="../graphics/svg/close.svg"/>
+        </span>
+        <h2>Your Cart</h2>
+        <div id="cart-content">
+        </div>
+        <div id="cart-footer">
+          <h3>Your total: $<span id="cart-total">0</span></h3>
+          <button id="cart-clean">Clear Cart</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Importing Footer HTML file -->
     <html-include src="../html/footer.html"></html-include>
