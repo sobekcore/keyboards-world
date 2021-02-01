@@ -196,11 +196,14 @@
   color: var(--toned-dark-color);
   letter-spacing: 1px;
   padding: 8px 20px;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 2px var(--toned-dark-color) solid;
   background-color: var(--dark-beige-color);
   cursor: pointer; outline: none;
   transition: .15s ease-in-out;
+
+  /* Weird button trail fix */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
 #cart-clean:hover

@@ -1,3 +1,11 @@
+// Contentful
+const client = contentful.createClient(
+  {
+    space: "72jw4aplepcx",
+    accessToken: "jM4DHw1rkBloT5l4OSirmmJOangqwikpak8OyZINm6Y"
+  }
+);
+
 // Variables
 const cartButton = document.querySelector("#cart-button");
 const cartClose = document.querySelector("#cart-close");
@@ -22,9 +30,14 @@ class Products
   {
     try
     {
-      let result = await fetch("products.json");
-      let data = await result.json();
-      let products = data.items;
+      let contentful = await client.getEntries(
+      { content_type: "keyboardsWorldProducts", order: "sys.createdAt" });
+
+      /* Fetching data from JSON file
+      let result = await fetch("../store/products.json");
+      let data = await result.json(); */
+
+      let products = contentful.items;
       products = products.map(item =>
         {
           const { title, price } = item.fields;
