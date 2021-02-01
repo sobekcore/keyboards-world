@@ -1,8 +1,8 @@
 // Contentful
 const client = contentful.createClient(
   {
-    space: CONTENTFUL_SPACE_ID,
-    accessToken: CONTENTFUL_ACCES_TOKEN
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCES_TOKEN
   }
 );
 
