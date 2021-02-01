@@ -1,8 +1,8 @@
 // Contentful
 const client = contentful.createClient(
   {
-    space: "72jw4aplepcx",
-    accessToken: "jM4DHw1rkBloT5l4OSirmmJOangqwikpak8OyZINm6Y"
+    space: env.CONTENTFUL_SPACE_ID,
+    accessToken: env.CONTENTFUL_ACCES_TOKEN
   }
 );
 
@@ -107,7 +107,6 @@ class UI
 
             // Get product from products
             let cartItem = { ...Storage.getProduct(id), amount: 1 };
-            console.log(cartItem);
 
             // Add product to the cart
             cart = [...cart, cartItem];
