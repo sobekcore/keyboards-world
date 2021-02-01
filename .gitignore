@@ -1,5 +1,0 @@
-# Local .env file ignored
-local.env.js
-
-# Notice that .env file is .js due to this app not
-# running in node server because it is Vanilla JS.
