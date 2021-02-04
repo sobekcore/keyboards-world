@@ -10,6 +10,7 @@ const client = contentful.createClient(
 const cartButton = document.querySelector("#cart-button");
 const cartClose = document.querySelector("#cart-close");
 const cartClear = document.querySelector("#cart-clean");
+const Purchase = document.querySelector("#purchase");
 const cartDOM = document.querySelector(".cart");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cartItems = document.querySelector("#cart-items");
@@ -191,6 +192,9 @@ class UI
 
   cartLogic()
   {
+    // Purchase cart button
+    Purchase.addEventListener("click", () => { this.purchaseCart() })
+
     // Clear cart button
     cartClear.addEventListener("click", () => { this.clearCart() })
 
@@ -234,6 +238,26 @@ class UI
         }
       }
     );
+  }
+
+  purchaseCart()
+  {
+    // Purchased animation
+    var h1 = document.createElement("h1");
+    h1.innerHTML = "Thank you for purchase";
+    document.getElementById("purchased").style.display = "block";
+    document.getElementById("purchased").appendChild(h1);
+
+    // Return do display none
+    setTimeout(function()
+    { document.getElementById("purchased").style.display = "none"; }, 6500);
+
+    let cartItems = cart.map(item => item.id);
+    cartItems.forEach(id => this.removeItem(id));
+    while(cartContent.children.length > 0)
+    { cartContent.removeChild(cartContent.children[0]); }
+
+    this.hideCart();
   }
 
   clearCart()

@@ -80,7 +80,15 @@ nav ul li:hover
 
 @media(max-width: 669px)
 {
+  nav { grid-template-columns: 95fr 5fr; }
   nav h1 { display: none; }
-  nav ul { display: none; }
-  #navbar-cart img { margin-bottom: 11px; }
+  nav ul { padding-left: 20px; }
+  #navbar-cart img { margin-bottom: 12px; }
+}
+
+@media(max-width: 359px)
+{
+  nav ul { padding-left: 10px; }
+  nav ul li { padding: 10px 5px; }
+  #navbar-cart { width: 70px; }
 }

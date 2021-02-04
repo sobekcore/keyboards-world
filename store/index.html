@@ -14,13 +14,14 @@
   <body>
     <div class="loader"><img src="../graphics/svg/loading.svg" alt="Loading..." /></div>
     <button onclick="backToTop()" id="top"><img src="../graphics/svg/to-top.svg"/></button>
+    <div id="purchased" style="display: none;"></div>
 
     <div id="background"></div>
 
     <!-- Hardcoded Navbar due to store variables -->
     <nav>
       <h1>Keyboards World</h1>
-      <ul>
+      <ul id="navbar-items">
         <a href="/"><li>Home</li></a>
         <a href="/about"><li>About</li></a>
         <a href="/store"><li>Store</li></a>
@@ -53,6 +54,7 @@
         </div>
         <div id="cart-footer">
           <h3>Your total: $<span id="cart-total">0</span></h3>
+          <button id="purchase">Purchase</button> <br />
           <button id="cart-clean">Clear Cart</button>
         </div>
       </div>

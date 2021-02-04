@@ -1,7 +1,7 @@
 # Keyboards World ⌨️
 Keyboards World is a example e-commerce website to improve my front-end skills and also learn some new ones. It serves informational and store purposes.
 
-## How it is made? :hammer:
+## How it's made? :hammer:
 Keyboards World is made with Vanilla JS and Contentful to fetch products from created Space. The website supports Continuous Integration (CI) & Continuous Deployment (CD) on Netlify.
 
 ## Features :pencil:
