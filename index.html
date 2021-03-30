@@ -3,30 +3,39 @@
 <html>
   <head>
     <title>Keyboards World</title>
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="./graphics/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Keyboards World is a example e-commerce store to improve front-end skills. It is not
     a real store!"/>
-    <meta name="keywords" content="front end, e-commerce, example, vanilla js, contentful, mechanical keyboards"/>
+    <meta name="keywords" content="front end, e-commerce, vanilla js, contentful, mechanical keyboards"/>
   </head>
   <body>
-    <div class="loader"><img src="./graphics/svg/loading.svg" alt="Loading..." /></div>
-    <button onclick="backToTop()" id="top"><img src="./graphics/svg/to-top.svg"/></button>
+    <div class="loader"><img src="./src/assets/svg/loading.svg" alt="Loading..." /></div>
+    <button onclick="backToTop()" id="top"><img src="./src/assets/svg/to-top.svg"/></button>
 
-    <!-- Importing Navbar HTML file -->
-    <html-include src="./html/navbar.html"></html-include>
-
-    <header>
+    <nav>
+      <h1>Keyboards World</h1>
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/about"><li>About</li></a>
+        <a href="/store"><li>Store</li></a>
+      </ul>
+      </div>
+      <div id="navbar-cart">
+        <div id="cart-button">
+          <a href="/store"><img src="./src/assets/svg/shopping-bag.svg"/></a>
+        </div>
+      </div>
+    </nav>
+    <header id="home-title">
       <div id="background"></div>
-      <a href="/store"><h2>Choose your keyboard now!</h2></a>
+      <a href="/store"><h2 id="main-btn">Choose your keyboard now!</h2></a>
     </header>
     <article id="features">
-      <div><img src="./graphics/svg/laptop-icon.svg"/><h2>You choose</h2></div>
-      <div><img src="./graphics/svg/build-icon.svg"/><h2>We build</h2></div>
-      <div><img src="./graphics/svg/delivery-icon.svg"/><h2>Then ship!</h2></div>
+      <div><img src="./src/assets/svg/laptop-icon.svg"/><h2>You choose</h2></div>
+      <div><img src="./src/assets/svg/build-icon.svg"/><h2>We build</h2></div>
+      <div><img src="./src/assets/svg/delivery-icon.svg"/><h2>Then ship!</h2></div>
     </article>
-    <article id="about">
+    <article id="about-us">
       <h1>About Us</h1>
       <p>We are a new brand in the market. Our goal is to create affordable and modern shop for you to buy your mechanical
       keyboards. We sell everything you'd need to make your custom keyboard, tho we specialize in mechanical switches, mostly
@@ -34,12 +43,10 @@
       enjoyable.
       </p>
     </article>
+    <footer>
+      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a>
+      <br /> All rights reserved</h3>
+    </footer>
 
-    <!-- Importing Footer HTML file -->
-    <html-include src="./html/footer.html"></html-include>
-
-    <script src="./javascript/loading.js"></script>
-    <script src="./javascript/import-html.js"></script>
-    <script src="./javascript/to-top.js"></script>
   </body>
 </html>

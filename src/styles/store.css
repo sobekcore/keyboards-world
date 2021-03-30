@@ -1,17 +1,10 @@
-/* Import duplicate styles */
-@import "../styles/globals.css";
-@import "../styles/loading.css";
-@import "../styles/navbar.css";
-@import "../styles/footer.css";
-@import "../styles/top-button.css";
-
 /* Static background */
-#background
+#store-background
 {
   position: fixed;
   height: calc(100%);
   width: 100%;
-  background: url("../graphics/mechanical-keyboards.jpg") no-repeat fixed center / cover;
+  background: url("../assets/mechanical-keyboards-url.jpg") no-repeat fixed center / cover;
   opacity: 0.2;
   z-index: -1;
 }
@@ -182,12 +175,16 @@
   { width: 30vw; min-width: 450px; }
 }
 
-#cart-close { cursor: pointer; }
+#cart-close
+{ cursor: pointer; }
 
-#cart-close img
-{ width: 40px; transition: .15s ease-in-out; }
+#cart-close i
+{
+  margin-top: -8px;
+  transition: .15s ease-in-out;
+}
 
-#cart-close img:hover
+#cart-close i:hover
 { transform: scale(1.2); }
 
 #cart-clean,
@@ -295,8 +292,7 @@
 .item-amount
 {
   text-align: center;
-  margin-bottom: 3px;
-  margin-top: -3px;
+
 }
 
 .remove-item
@@ -313,23 +309,17 @@
 .amount-up,
 .amount-down
 {
-  height: 30px; cursor: pointer;
   transition: .15s ease-in-out;
+  cursor: pointer;
 }
 
-.amount-down:hover
-{ transform: scale(1.35); }
-
-.amount-up
-{ transform: rotateX(180deg); }
-
+.amount-down:hover,
 .amount-up:hover
-{ transform: rotateX(180deg) scale(1.35); }
+{ transform: scale(1.4); }
 
 
 /* Footer */
-footer
+footer.shadow
 {
-  background-color: var(--dark-beige-color);
   box-shadow: 0 -5px 20px gray;
 }

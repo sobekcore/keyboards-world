@@ -1,8 +1,8 @@
 // Contentful
 const client = contentful.createClient(
   {
-    space: env.CONTENTFUL_SPACE_ID,
-    accessToken: env.CONTENTFUL_ACCES_TOKEN
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCES_TOKEN
   }
 );
 
@@ -156,9 +156,9 @@ class UI
         <span class="remove-item" data-id=${item.id}>remove</span>
       </div>
         <div>
-          <img class="amount-up" src="../graphics/svg/up-down.svg" data-id=${item.id} />
+          <i class="amount-up fa fa-angle-up fa-2x" data-id=${item.id}></i>
           <p class="item-amount">${item.amount}</p>
-          <img class="amount-down" src="../graphics/svg/up-down.svg" data-id=${item.id} />
+          <i class="amount-down fa fa-angle-down fa-2x" data-id=${item.id}></i>
         </div>
       </div>
     `

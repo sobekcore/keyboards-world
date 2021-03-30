@@ -1,5 +1,3 @@
-/* CSS Global Settings */
-
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -39,3 +37,13 @@ body::-webkit-scrollbar-track
 
 body::-webkit-scrollbar-thumb
 { background: var(--toned-dark-color); }
+
+
+/* Import .css files */
+@import "./home.css";
+@import "./about.css";
+@import "./store.css";
+@import "./loading.css";
+@import "./navbar.css";
+@import "./footer.css";
+@import "./top-button.css";

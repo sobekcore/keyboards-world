@@ -3,22 +3,24 @@
 <html>
   <head>
     <title>Keyboards World - Store</title>
-    <link href="store.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="../graphics/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Keyboards World is a example e-commerce store to improve front-end skills. It is not
     a real store!"/>
-    <meta name="keywords" content="front end, e-commerce, example, vanilla js, contentful, mechanical keyboards"/>
+    <meta name="keywords" content="front end, e-commerce, vanilla js, contentful, mechanical keyboards"/>
     <link rel="canonical" href="/store">
+
+    <!-- Font Awesome 4 Icons -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="loader"><img src="../graphics/svg/loading.svg" alt="Loading..." /></div>
-    <button onclick="backToTop()" id="top"><img src="../graphics/svg/to-top.svg"/></button>
+    <div class="loader"><img src="../src/assets/svg/loading.svg" alt="Loading..." /></div>
+    <button onclick="backToTop()" id="top"><img src="../src/assets/svg/to-top.svg"/></button>
     <div id="purchased" style="display: none;"></div>
+    <div id="store-background"></div>
 
-    <div id="background"></div>
-
-    <!-- Hardcoded Navbar due to store variables -->
+    <!-- Navbar -->
     <nav>
       <h1>Keyboards World</h1>
       <ul id="navbar-items">
@@ -29,7 +31,7 @@
       <div id="navbar-cart">
         <div id="cart-button">
           <div id="cart-items">0</div>
-          <img src="/graphics/svg/shopping-bag.svg"/>
+          <img src="../src/assets/svg/shopping-bag.svg"/>
         </div>
       </div>
     </nav>
@@ -47,7 +49,7 @@
     <div class="cart-overlay">
       <div class="cart">
         <span id="cart-close">
-          <img src="../graphics/svg/close.svg"/>
+          <i class="fa fa-times fa-3x"></i>
         </span>
         <h2>Your Cart</h2>
         <div id="cart-content">
@@ -59,19 +61,13 @@
         </div>
       </div>
     </div>
-
-    <!-- Importing Footer HTML file -->
-    <html-include src="../html/footer.html"></html-include>
+    <footer class="shadow">
+      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a>
+      <br /> All rights reserved</h3>
+    </footer>
 
     <!-- Importing Contentful API -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
-    <!-- Importing .env JS file locally -->
-    <script src="../local.env.js"></script>
-
-    <script src="../javascript/loading.js"></script>
-    <script src="../javascript/import-html.js"></script>
-    <script src="../javascript/store.js"></script>
-    <script src="../javascript/to-top.js"></script>
   </body>
 </html>

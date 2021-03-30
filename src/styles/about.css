@@ -1,24 +1,17 @@
-/* Import duplicate styles */
-@import "../styles/globals.css";
-@import "../styles/loading.css";
-@import "../styles/navbar.css";
-@import "../styles/footer.css";
-@import "../styles/top-button.css";
-
 /* Header */
-header
+#about-title
 {
   height: calc(100% - 85px);
   min-height: 715px;
 }
 
-header #background
+#about-background
 {
   position: absolute;
   height: calc(100% - 85px);
   min-height: 715px;
   width: 100%; max-width: 100%;
-  background: url("../graphics/mechanical-keyboards.jpg") no-repeat fixed center / cover;
+  background: url("../assets/mechanical-keyboards-url.jpg") no-repeat fixed center / cover;
   opacity: 0.2;
 }
 
@@ -106,15 +99,14 @@ header #background
 
 @media(max-width: 479px)
 {
-  header, header #background { min-height: 1260px; }
+  #about-title, #about-background { min-height: 1260px; }
   #wrapper { top: 40px; }
   #wrapper h1 { font-size: 32px; }
   #wrapper span { font-size: 53px; }
 }
 
-
 /* Content */
-article
+#about
 {
   font: 22px "Open Sans";
   color: var(--toned-dark-color);
@@ -122,27 +114,27 @@ article
   box-shadow: 0 -5px 20px gray;
 }
 
-section
+#about section
 {
   text-align: center;
   padding: 60px 60px 70px 60px;
   width: 100%;
 }
 
-section h2
+#about section h2
 {
   font: bold 48px "Montserrat";
   padding-bottom: 50px;
   letter-spacing: 3px;
 }
 
-section img
+#about section img
 {
   margin-top: 55px;
   max-width: 70%;
 }
 
-section p { text-align: left; }
+#about section p { text-align: left; }
 #keycaps img { border-radius: 50px; }
 #pcb img { border-radius: 20px; }
 
@@ -150,4 +142,4 @@ section p { text-align: left; }
 { background-color: var(--dark-beige-color); }
 
 @media(max-width: 460px)
-{ section { padding: 30px 30px 40px 30px; } }
+{ #about section { padding: 30px 30px 40px 30px; } }

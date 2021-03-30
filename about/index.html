@@ -3,34 +3,43 @@
 <html>
   <head>
     <title>Keyboards World - About</title>
-    <link href="about.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="../graphics/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Keyboards World is a example e-commerce store to improve front-end skills. It is not
     a real store!"/>
-    <meta name="keywords" content="front end, e-commerce, example, vanilla js, contentful, mechanical keyboards"/>
+    <meta name="keywords" content="front-end, e-commerce, vanilla js, contentful, mechanical keyboards"/>
     <link rel="canonical" href="/about">
   </head>
   <body>
-    <div class="loader"><img src="../graphics/svg/loading.svg" alt="Loading..." /></div>
-    <button onclick="backToTop()" id="top"><img src="../graphics/svg/to-top.svg"/></button>
+    <div class="loader"><img src="../src/assets/svg/loading.svg" alt="Loading..." /></div>
+    <button onclick="backToTop()" id="top"><img src="../src/assets/svg/to-top.svg"/></button>
 
-    <!-- Importing Navbar HTML file -->
-    <html-include src="../html/navbar.html"></html-include>
-
-    <header>
-      <div id="background"></div>
+    <nav>
+      <h1>Keyboards World</h1>
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/about"><li>About</li></a>
+        <a href="/store"><li>Store</li></a>
+      </ul>
+      </div>
+      <div id="navbar-cart">
+        <div id="cart-button">
+          <a href="../store/"><img src="../src/assets/svg/shopping-bag.svg"/></a>
+        </div>
+      </div>
+    </nav>
+    <header id="about-title">
+      <div id="about-background"></div>
       <div id="wrapper">
         <h1>How we build your <br /> <span>Keyboards</span></h1>
         <ul id="container">
-          <li><a href="#pcb"><img src="../graphics/pcb.png"/><h2>PCB</h2></a></li>
-          <li><a href="#case"><img src="../graphics/case.png"/><h2>Case</h2></a></li>
-          <li><a href="#switches"><img src="../graphics/switch.png"/><h2>Switches</h2></a></li>
-          <li><a href="#keycaps"><img src="../graphics/keycap.png"/><h2>Keycaps</h2></a></li>
+          <li><a href="#pcb"><img src="../src/assets/pcb.png"/><h2>PCB</h2></a></li>
+          <li><a href="#case"><img src="../src/assets/case.png"/><h2>Case</h2></a></li>
+          <li><a href="#switches"><img src="../src/assets/switch.png"/><h2>Switches</h2></a></li>
+          <li><a href="#keycaps"><img src="../src/assets/keycap.png"/><h2>Keycaps</h2></a></li>
         </ul>
       </div>
     </header>
-    <article>
+    <article id="about">
       <section id="pcb">
         <h2>PCB</h2>
         <p>Printed Circuit Board is a vital element of any keyboard, it handles every action that is done on the keyboard,
@@ -38,7 +47,7 @@
         and many more! The PCB's we sell are highest quality, and are on artsian level with ornaments done on them with paths.
         You should start thinking about your keyboard from PCB, it defines its layout. We recommend standard layouts for the
         begginers :)</p>
-        <img src="../graphics/pcb-detailed.png"/>
+        <img class="big-img" src="../src/assets/pcb-detailed.png"/>
       </section>
       <section id="case">
         <h2>Case</h2>
@@ -47,7 +56,7 @@
         so choose it wisely! Cases can have different mounting methods, but as a beginner that shouldn't bother you. Just pick
         the one you like visually. Cases also can be made with many diferent materials, but generally good quality plastic should
         be enough.</p>
-        <img src="../graphics/keyboard-sizes.png"/>
+        <img class="big-img" src="../src/assets/keyboard-sizes.png"/>
       </section>
       <section id="switches">
         <h2>Switches</h2>
@@ -56,7 +65,7 @@
         Nowadays there are hunders of switch models from many diferent brands like Cherry, Gateron, Kalih, and many more!
         If you choose hotswap PCB you may exchange them but it's time consuming process and its definitely not cheap.
         So choose them carefully too, like everything you should in your keeb. We sell them in packs of 70.</p>
-        <img src="../graphics/switch-build.png"/>
+        <img class="big-img" src="../src/assets/switch-build.png"/>
       </section>
       <section id="keycaps">
         <h2>Keycaps</h2>
@@ -65,15 +74,13 @@
         worst thing with them is that this subject is 100% subjective, someone might like one profile, and other person might
         dislike it. You'd need to guess or try which one you like. We sell full sets for 100% keyboards just in case.
         </p>
-        <img src="../graphics/keycap-profiles.png"/>
+        <img class="big-img" src="../src/assets/keycap-profiles.png"/>
       </section>
     </article>
+    <footer>
+      <h3>Made by <a href="https://twitter.com/sobekcore">Sobek</a>
+      <br /> All rights reserved</h3>
+    </footer>
 
-    <!-- Importing Footer HTML file -->
-    <html-include src="../html/footer.html"></html-include>
-
-    <script src="../javascript/loading.js"></script>
-    <script src="../javascript/import-html.js"></script>
-    <script src="../javascript/to-top.js"></script>
   </body>
 </html>
