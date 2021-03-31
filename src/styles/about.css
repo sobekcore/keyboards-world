@@ -72,9 +72,14 @@
   text-decoration: none;
 }
 
-#container li:hover { transform: scale(1.1); }
+#container li:hover
+{ transform: scale(1.1); }
 
-#container img { width: 200px; margin-bottom: 30px; }
+#container img
+{
+  width: 200px;
+  margin-bottom: 30px;
+}
 
 @media(max-width: 1319px)
 {
@@ -84,7 +89,8 @@
     width: 210px; height: 250px;
   }
 
-  #container img { width: 160px; }
+  #container img
+  { width: 160px; }
 }
 
 @media(max-width: 959px) and (max-height: 899px)
@@ -134,12 +140,20 @@
   max-width: 70%;
 }
 
-#about section p { text-align: left; }
-#keycaps img { border-radius: 50px; }
-#pcb img { border-radius: 20px; }
+#about section p
+{ text-align: left; }
+
+#keycaps img
+{ border-radius: 50px; }
+
+#pcb img
+{ border-radius: 20px; }
 
 #case, #keycaps
 { background-color: var(--dark-beige-color); }
 
 @media(max-width: 460px)
-{ #about section { padding: 30px 30px 40px 30px; } }
+{
+  #about section
+  { padding: 30px 30px 40px 30px; }
+}

@@ -30,7 +30,7 @@ body
 { transition: none !important; }
 
 body::-webkit-scrollbar
-{ width: 14px; }
+{ width: 12px; }
 
 body::-webkit-scrollbar-track
 { background: beige; }

@@ -1,5 +1,6 @@
 /* Header */
-#home-title { height: calc(100% - 85px); }
+#home-title
+{ height: calc(100% - 85px); }
 
 #home-title #background
 {
@@ -53,10 +54,22 @@
 }
 
 @media (max-width: 549px)
-{ #main-btn { top: calc(50% - 15px); width: 345px; font-size: 22px; } }
+{
+  #main-btn
+  {
+    top: calc(50% - 15px);
+    width: 345px; font-size: 22px;
+  }
+}
 
 @media (max-width: 379px)
-{ #main-btn { width: 265px; font-size: 16px; } }
+{
+  #main-btn
+  {
+    width: 265px;
+    font-size: 16px;
+  }
+}
 
 
 /* Features */
@@ -84,8 +97,17 @@
 
 @media(max-width: 999px)
 {
-  #features { font-size: 25px; min-height: 640px; }
-  #features div img { height: 135px; margin-bottom: 0; }
+  #features
+  {
+    font-size: 25px;
+    min-height: 640px;
+  }
+
+  #features div img
+  {
+    height: 135px;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -108,7 +130,13 @@
 }
 
 @media(max-width: 829px)
-{ #about-us { padding: 80px 60px; } }
+{
+  #about-us
+  { padding: 80px 60px; }
+}
 
 @media(max-width: 449px)
-{ #about-us { padding: 50px 40px; } }
+{
+  #about-us
+  { padding: 50px 40px; }
+}

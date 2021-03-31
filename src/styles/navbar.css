@@ -17,7 +17,8 @@ nav h1
   user-select: none;
 }
 
-nav a { text-decoration: none; }
+nav a
+{ text-decoration: none; }
 
 nav ul
 {
@@ -74,7 +75,8 @@ nav ul li:hover
   cursor: pointer;
 }
 
-#cart-button:hover { transform: scale(1.2); }
+#cart-button:hover
+{ transform: scale(1.2); }
 
 @media(max-width: 669px)
 {
