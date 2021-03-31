@@ -4,8 +4,7 @@ require("dotenv").config();
 
 module.exports = {
   entry: {
-    main: "./src/javascript/index.js",
-    vendor: "./src/javascript/contentful.js"
+    main: "./src/javascript/index.js"
   },
   plugins: [
     new HtmlWebpackPlugin({

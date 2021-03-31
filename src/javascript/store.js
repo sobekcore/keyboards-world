@@ -1,4 +1,8 @@
+if(window.location.pathname == "/store/") {
+
 // Contentful
+const contentful = require("contentful");
+
 const client = contentful.createClient(
   {
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -325,3 +329,5 @@ document.addEventListener("DOMContentLoaded", () =>
     );
   }
 );
+
+}
