@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "test-production": "netlify deploy -d=dist --open",
     "production": "netlify deploy -d=dist --prod"
   },
   "author": "Sobek",

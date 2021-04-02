@@ -2,6 +2,4 @@
 import "../styles/index.css";
 
 // Import JS files
-import "./loading";
 import "./to-top";
-import "./store";

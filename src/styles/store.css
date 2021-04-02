@@ -38,7 +38,7 @@
 {
   width: 100vw;
   margin: 0 auto;
-  max-width: 1170px; width: 100%;
+  max-width: 1170px; width: 85%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;

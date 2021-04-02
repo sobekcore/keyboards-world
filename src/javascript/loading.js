@@ -8,4 +8,4 @@ window.addEventListener("load", function()
 
 // No animations on load
 document.body.classList.add("no-transition");
-setTimeout(() => document.body.classList.remove("no-transition"), 300);
+setTimeout(() => document.body.classList.remove("no-transition"), 1);

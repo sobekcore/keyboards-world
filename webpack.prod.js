@@ -9,12 +9,12 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = merge(config, {
   mode: "production",
   output: {
-    filename: "[name]-[contenthash].bundle.js",
+    filename: "[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist")
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name]-[contenthash].css"
+      filename: "[contenthash].css"
     }),
     new CleanWebpackPlugin()
   ],
@@ -40,5 +40,8 @@ module.exports = merge(config, {
       new CssMinimizerPlugin(),
       new TerserPlugin()
     ],
+    splitChunks: {
+      chunks: "all"
+    }
   },
 });

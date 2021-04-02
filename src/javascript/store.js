@@ -1,5 +1,5 @@
 if(window.location.pathname == "/store/")
-{ // Execute this JS file only in store
+{ // Execute this file only if in store
 
 // Contentful
 const contentful = require("contentful");
