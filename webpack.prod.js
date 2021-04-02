@@ -38,7 +38,9 @@ module.exports = merge(config, {
     minimize: true,
     minimizer: [
       new CssMinimizerPlugin(),
-      new TerserPlugin()
+      new TerserPlugin({
+        test: /\.bundle.js$/
+      })
     ],
     splitChunks: {
       chunks: "all"
